@@ -45,8 +45,6 @@ LRPS_ridge <- function(filename) {
   return(Meanresultsind)
 }
 
-# Build a container matrix
-# Container matrix: rows = MSE,RMSE...; cols = Files 
 result_pcasparsevar <- matrix(NA, 2, length(filenames), dimnames = list(c( "rmse","mae"),
                                                                         c(as.list(filenames))))
 
