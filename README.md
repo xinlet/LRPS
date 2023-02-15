@@ -7,8 +7,11 @@ Latent factor models such as principal component analysis (PCA) can be used to a
 ## Authors
 
 Xinle Tian
+
 Sandipan Roy
+
 Matt Nunes
+
 Alex Gibberd
 
 ## License
