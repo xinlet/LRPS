@@ -6,8 +6,8 @@ p = 1 # VAR(p) model for factors
 s = 1 # weight of true non-zero loadings
 
 #tweaking parameters
-r = 10 # number of factors 
-rho = 0.7 # VAR(p) auto-correlation coefficient  (0.3,0.8)
+r = 10 # number of factors (5,10)
+rho = 0.3 # VAR(p) auto-correlation coefficient  (0.3,0.8)
 d = 0.8 # serial correlation for idio (0.3,0.8)
 tau = 0.8 # cross correlation for idio (0.3,0.8)
 
