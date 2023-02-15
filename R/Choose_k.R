@@ -15,8 +15,7 @@ analyzek <- function(filename) {
   y <- data.matrix(y)
   results = array(0, dim = c( min(ncol(y), rollingwindow), (nrow(y) - rollingwindow - 1)))
   for(i in 1:(nrow(y) - rollingwindow - 1)) {
-    y_train <- y[i: (i-1+rollingwindow),]   #training data
-    #y_test <- y[(i+ rollingwindow),]
+    y_train <- y[i: (i-1+rollingwindow),]   
     
     pc <- prcomp(y_train,
                  center = TRUE,
