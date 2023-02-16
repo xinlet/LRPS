@@ -1,5 +1,3 @@
-library(vars)
-library(tseries)
 library(forecast)
 library(dplyr)
 library(tidyr)
@@ -45,14 +43,14 @@ LRPS_ridge <- function(filename) {
   return(Meanresultsind)
 }
 
-result_pcasparsevar <- matrix(NA, 2, length(filenames), dimnames = list(c( "rmse","mae"),
+result_LRPS <- matrix(NA, 2, length(filenames), dimnames = list(c( "rmse","mae"),
                                                                         c(as.list(filenames))))
 
 # iterations for each file
 for (i in 1:length(filenames)) {
   filenamesuse <- filenames[i]
-  output <- analyzepcasparsevar(filenamesuse) 
-  result_pcasparsevar[,i] = output
+  output <- LRPS_ridge(filenamesuse) 
+  result_LRPS[,i] = output
   
 }
-mean1 <- rowMeans(result_pcasparsevar)
+mean_over_subject <- rowMeans(result_pcasparsevar)
