@@ -16,8 +16,6 @@ repeat {
   A = rho*diag(r)
   Sig_u = diag(r) #fixed sig_u = 1
   factors = tsDyn::VAR.sim( B = A, n = n, include = "none",  varcov = Sig_u)
-  
-  Lambda_dense = matrix(rnorm(N*r), ncol = r)
    
   D = d*diag(N)
   Ip <- diag(N)
