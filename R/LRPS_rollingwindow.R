@@ -53,4 +53,4 @@ for (i in 1:length(filenames)) {
   result_LRPS[,i] = output
   
 }
-mean_over_subject <- rowMeans(result_pcasparsevar)
+mean_over_subject <- rowMeans(result_LRPS)
