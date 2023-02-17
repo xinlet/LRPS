@@ -2,18 +2,18 @@ library(tidyr)
 library(ggplot2)
 library(ggeasy)
 library(ggpubr)
+
 #Data directory=====================================
-setwd("~/your data directory")
-filenames <- list.files(path = "~/your data directory",  
-                        ("csv"))
+setwd("~Atlanta data directory") #change to your own directory
+filenames <- list.files(path = "~Atlanta data directory", ("csv")) # change to your own directory
 filenames <- filenames[1:length(filenames)]
-rollingwindow = 50 #your defined rolling window size, in our study is either 50 or 120
+rollingwindow = 120 #in our study is 120
 #====
 
 analyzek <- function(filename) {
   y <- read.csv(file = filename, header = TRUE)
   y <- data.matrix(y)
-  results = array(0, dim = c( min(ncol(y), rollingwindow), (nrow(y) - rollingwindow - 1)))
+  results = array(0, dim = c(116, (nrow(y) - rollingwindow - 1))) 
   for(i in 1:(nrow(y) - rollingwindow - 1)) {
     y_train <- y[i: (i-1+rollingwindow),]   
     
@@ -27,7 +27,7 @@ analyzek <- function(filename) {
   return(Meanresultsind)
 }
 
-result_k  <- matrix(NA, min(ncol(y), rollingwindow), length(filenames))
+result_k  <- matrix(NA, 116, length(filenames))
 
 for (i in 1:length(filenames)) {
   filenamesuse <- filenames[i]
@@ -36,12 +36,13 @@ for (i in 1:length(filenames)) {
 }
 
 k_mean <- rowMeans(result_k)
-k_num <- c(1:min(ncol(y), rollingwindow))
+k_num <- c(1:116)
 matrix_k <- as.data.frame(cbind(k_num, k_mean))
 
 ggplot(matrix_k) + geom_line(aes(x = k_num, y = k_mean)) +
   labs(y= "Cumulative explained Variance", x = "Number of k") +
-  scale_x_continuous(breaks = seq(0, min(ncol(y), rollingwindow), by = 10)) +
+  scale_x_continuous(breaks = seq(0, 116, by = 10)) +
   geom_hline(yintercept=0.9, linetype="dashed", color = "red") + 
   scale_y_continuous(breaks = seq(0, 1, by = 0.1)) 
+
 
