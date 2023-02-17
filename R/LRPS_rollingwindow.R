@@ -25,10 +25,10 @@ LRPS_ridge <- function(filename) {
                  scale. = TRUE)
     y_train <- t(t(pc$x[,1:K] %*% t(pc$rotation[,1:K])) * pc$scale + pc$center)
     y_train <- as.data.frame(y_train) #new train 
-    # fit sparseVAR
-    sparsevar <- VARshrink(y_train, p=1, type = "none", method = "ridge")
-    pred_var <- predict(sparsevar, n.ahead = 1)
     
+    sparsevar <- VARshrink(y_train, p=1, type = "none", method = "ridge")
+    
+    pred_var <- predict(sparsevar, n.ahead = 1)
     pred_var_value <- lapply(pred_var$fcst, `[[`, 1)
     pred_var_value <- as.data.frame(pred_var_value)
     pred_var_num <- as.numeric(unlist(pred_var_value))
