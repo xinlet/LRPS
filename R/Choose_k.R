@@ -45,5 +45,5 @@ ggplot(matrix_k) + geom_line(aes(x = k_num, y = k_mean)) +
   geom_hline(yintercept=0.9, linetype="dashed", color = "red") + 
   scale_y_continuous(breaks = seq(0, 1, by = 0.1)) 
 
-k_choice <- which(matrix_k[,2] > 0.9)[1]
+K <- which(matrix_k[,2] > 0.9)[1]
 
