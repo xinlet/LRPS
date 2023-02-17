@@ -12,7 +12,6 @@ K = #num of factors   ##In simulations, K are set. In application studies, K can
 rollingwindow = #size of the rollingwindow
 
 ##################################
-#1. PCA and Sprase VAR (new generating training data)====================
 LRPS_ridge <- function(filename) {
   y <- read.csv(file = filename, header = TRUE)
   y <- data.matrix(y)
