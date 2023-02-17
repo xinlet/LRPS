@@ -8,7 +8,7 @@ library(VARshrink)
 setwd("~your data directory")
 filenames <- list.files(path = "~your data directory",  
                         ("csv"))
-K = #num of factors
+K = #num of factors   ##In simulations, K are set. In application studies, K can be obtained by "Choose_k.R"
 rollingwindow = #size of the rollingwindow
 
 ##################################
