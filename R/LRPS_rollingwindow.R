@@ -24,7 +24,7 @@ LRPS_ridge <- function(filename) {
                  center = TRUE,
                  scale. = TRUE)
     y_train <- t(t(pc$x[,1:K] %*% t(pc$rotation[,1:K])) * pc$scale + pc$center)
-    y_train <- as.data.frame(y_train) #new train 
+    y_train <- as.data.frame(y_train) 
     
     sparsevar <- VARshrink(y_train, p=1, type = "none", method = "ridge")
     
