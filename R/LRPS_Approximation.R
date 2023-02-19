@@ -2,7 +2,7 @@ library(Metrics)
 library(matrixStats)
 library(VARshrink)
 #======================================
-data_generating <- function(y_train) {
+LRPS_Approx <- function(y_train) {
   pc <- prcomp(y_train,
                center = TRUE,
                scale. = TRUE)
