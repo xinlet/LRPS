@@ -1,6 +1,6 @@
 # This file provides the rolling window test of LRPS with repsect to the atlanta datasets.
 # Because the K values are unknown, so we need to calculate K values with file "Choose_k.R"
-source("LRPS_Approximation.R")
+source("LRPS_Approximation_atlanta.R")
 ##################################
 LRPS_ridge <- function(filename) {
   y <- read.csv(file = filename, header = TRUE)
