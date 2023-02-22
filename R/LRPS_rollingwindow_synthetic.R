@@ -46,3 +46,4 @@ for (i in 1:length(filenames)) {
   
 }
 mean_over_subject <- rowMeans(result_LRPS)
+mean_over_subject
