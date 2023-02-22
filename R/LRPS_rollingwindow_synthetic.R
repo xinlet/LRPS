@@ -2,9 +2,12 @@
 # Because the K values are pre-set
 # We no longer need to calculate K values
 # However we do neet to pre-set K = 5 or 10 depending on the datasets
-
-source("LRPS_Approximation.R")
-k = 5   #5 or 10 according to different synthetic datasets
+source("LRPS_Approximation_synthetic.R")
+setwd("~your data directory") #change to your own directory
+filenames <- list.files(path = "~your data directory", ("csv")) # change to your own directory
+filenames <- filenames[1:length(filenames)]
+rollingwindow = 50 # in our study
+K = 5   #5 or 10 according to different synthetic datasets
 ##################################
 LRPS_ridge <- function(filename) {
   y <- read.csv(file = filename, header = TRUE)
