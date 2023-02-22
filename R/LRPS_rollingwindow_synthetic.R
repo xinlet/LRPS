@@ -1,11 +1,14 @@
+# This file provides the rolling window test of LRPS with repsect to the synthetic datasets.
+# Because the K values are pre-set in the synthetic datasets.
+# We put a seperate files for rolling window test without a pre-set K situation.
 source("LRPS_Approximation.R")
 
 #Data directory=====================================
 setwd("~your data directory")
 filenames <- list.files(path = "~your data directory",  
                         ("csv"))
-K = #num of factors   ##In simulations, K are set. In application studies, K can be obtained by "Choose_k.R"
-rollingwindow = #size of the rollingwindow
+K = 5 # In the synthetic settings, the K value is either 5 or 10
+rollingwindow = 50 #size of the rollingwindow
 
 ##################################
 LRPS_ridge <- function(filename) {
