@@ -1,6 +1,5 @@
-# This file provides the rolling window test of LRPS with repsect to the synthetic datasets.
-# Because the K values are pre-set in the synthetic datasets.
-# We put a seperate files for rolling window test without a pre-set K situation.
+# This file provides the rolling window test of LRPS with repsect to the atlanta datasets.
+# Because the K values are unknown, so we need to calculate K values with file "Choose_k.R"
 source("LRPS_Approximation.R")
 
 #Data directory=====================================
