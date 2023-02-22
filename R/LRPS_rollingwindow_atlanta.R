@@ -1,14 +1,6 @@
 # This file provides the rolling window test of LRPS with repsect to the atlanta datasets.
 # Because the K values are unknown, so we need to calculate K values with file "Choose_k.R"
 source("LRPS_Approximation.R")
-
-#Data directory=====================================
-setwd("~your data directory")
-filenames <- list.files(path = "~your data directory",  
-                        ("csv"))
-K = 5 # In the synthetic settings, the K value is either 5 or 10
-rollingwindow = 50 #size of the rollingwindow
-
 ##################################
 LRPS_ridge <- function(filename) {
   y <- read.csv(file = filename, header = TRUE)
