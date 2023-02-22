@@ -10,7 +10,7 @@ LRPS_ridge <- function(filename) {
     y_train <- y[i: (i-1+rollingwindow),]  
     y_test <- y[(i+ rollingwindow),]
     
-    sparsevar <- LRPS_Approx(y_train, K)
+    sparsevar <- LRPS_Approxa_atlanta(y_train, K)
     
     pred_var <- predict(sparsevar, n.ahead = 1)
     pred_var_value <- lapply(pred_var$fcst, `[[`, 1)
