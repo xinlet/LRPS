@@ -11,6 +11,7 @@ rollingwindow = 120 #in our study is 120
 #====
 data <- read.csv(filenames[1], header = TRUE) 
 mindim <- min(rollingwindow, ncol(data))
+rm(data)
 
 analyzek <- function(filename) {
   y <- read.csv(file = filename, header = TRUE)
