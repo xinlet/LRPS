@@ -7,7 +7,7 @@ source("LRPS_Approximation_synthetic.R")
 setwd("~your data directory") #change to your own directory
 filenames <- list.files(path = "~your data directory", ("csv")) # change to your own directory
 filenames <- filenames[1:length(filenames)]
-rollingwindow = 50 # in our study
+rollingwindow = 50 #Our study uses 50 on the synthetic datasets
 
 ##################################
 LRPS_ridge <- function(filename) {
