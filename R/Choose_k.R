@@ -9,11 +9,13 @@ filenames <- list.files(path = "~Atlanta data directory", ("csv")) # change to y
 filenames <- filenames[1:length(filenames)]
 rollingwindow = 120 #in our study is 120
 #====
+data <- read.csv(filenames[1], header = TRUE) 
+mindim <- min(rollingwindow, ncol(data))
 
 analyzek <- function(filename) {
   y <- read.csv(file = filename, header = TRUE)
   y <- data.matrix(y)
-  results = array(0, dim = c(116, (nrow(y) - rollingwindow - 1))) 
+  results = array(0, dim = c(mindim, (nrow(y) - rollingwindow - 1))) 
   for(i in 1:(nrow(y) - rollingwindow - 1)) {
     y_train <- y[i: (i-1+rollingwindow),]   
     
@@ -27,7 +29,7 @@ analyzek <- function(filename) {
   return(Meanresultsind)
 }
 
-result_k  <- matrix(NA, 116, length(filenames))
+result_k  <- matrix(NA, mindim, length(filenames))
 
 for (i in 1:length(filenames)) {
   filenamesuse <- filenames[i]
@@ -36,12 +38,12 @@ for (i in 1:length(filenames)) {
 }
 
 k_mean <- rowMeans(result_k)
-k_num <- c(1:116)
+k_num <- c(1:mindim)
 matrix_k <- as.data.frame(cbind(k_num, k_mean))
 
 ggplot(matrix_k) + geom_line(aes(x = k_num, y = k_mean)) +
   labs(y= "Cumulative explained Variance", x = "Number of k") +
-  scale_x_continuous(breaks = seq(0, 116, by = 10)) +
+  scale_x_continuous(breaks = seq(0, mindim, by = 10)) +
   geom_hline(yintercept=0.9, linetype="dashed", color = "red") + 
   scale_y_continuous(breaks = seq(0, 1, by = 0.1)) 
 
