@@ -4,6 +4,8 @@ library(VARshrink)
 #======================================
 # Two functions are situations in the synthetic data testing situations
 # Where the K values are pre-set.
+
+K = 5 # or 10
 #======================================
 # Low-Rank Pre-smoothed Data
 LRPS_datagenerate_synthetic <- function(y_train) {
