@@ -1,8 +1,8 @@
-# A Low-rank Pre-smoothing model for Brain Activity Prediction (LRPS)
+# A Multi-response linear regression estimation based on low-rank pre-smoothing
 
 ## Description
 
-Latent factor models such as principal component analysis (PCA) can be used to analyze the connectivity of the brain network. On the other hand, vector autoregressive (VAR) models are also one of the bases for investigating brain networks. In this work, we investigate a low-rank pre-smoothing approximation method which aims to address the challenge of signal strength increase relative to data noise in the application of neurological datasets.
+We establish theoretical results on the performance of the proposed methodology, and quantify its benefit empirically in a number of simulated experiments. We also demonstrate our proposed low-rank pre-smoothing technique on real data arising from the environmental sciences.
 
 ## Authors
 
