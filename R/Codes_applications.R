@@ -14,10 +14,10 @@ Xtest <- X[(578 + 1):nrow(X), ]
 Ytest <- Y[(578 + 1):nrow(Y), ]
 
 #For Gene dataset
-Xtrain <- X[1:100, ]
-Ytrain <- Y[1:100, ]
-Xtest <- X[(100 + 1):nrow(X), ]
-Ytest <- Y[(100 + 1):nrow(Y), ]
+Xtrain <- X[1:96, ]
+Ytrain <- Y[1:96, ]
+Xtest <- X[(96 + 1):nrow(X), ]
+Ytest <- Y[(96 + 1):nrow(Y), ]
 
 #OLS computing====
 # Compute OLS estimates on training data
