@@ -101,7 +101,6 @@ Yhat <- Xtest %*% Bhatf
 nt <- nrow(Ytest)
 q <- ncol(Ytest)
 prediction_error_rrr <- sum((Yhat - Ytest)^2) / (nt * q)
-prediction_error_rrr
 cat("Prediction error for RRR:", prediction_error_rrr)
 
 #LRPS computing====
