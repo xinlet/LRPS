@@ -15,7 +15,7 @@ Xinle Tian, Alex Gibberd, Matthew Nunes, Sandipan Roy
 UK air pollution dataset can be found at [https://uk-air.defra.gov.uk/]<br />
 Beijing air pollution dataset can be found at [http://archive.ics.uci.edu/ml/]<br />
 US air pollution dataset can be found at [https://www.epa.gov/outdoor-air-quality-data)]<br />
-Geno dataset can be found at [https://genomebiology.biomedcentral.com/articles/10.1186/gb-2004-5-11-r92]<br />
+Gene association dataset can be found at [https://genomebiology.biomedcentral.com/articles/10.1186/gb-2004-5-11-r92]<br />
 
 ## Code and Output
 [UK dataset Output](R/US-output.md)<br />
