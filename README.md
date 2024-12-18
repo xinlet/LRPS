@@ -15,7 +15,7 @@ Xinle Tian, Alex Gibberd, Matthew Nunes, Sandipan Roy
 
 
 ## Code and Output
-[UK dataset Output](R/US-output.md)
-[Beijing dataset Output](R/Beijing-output.md)
-[US dataset Output](R/US-output.md)
-[Geno dataset Output](R/Geno-output.md)
+[UK dataset Output](R/US-output.md)<br />
+[Beijing dataset Output](R/Beijing-output.md)<br />
+[US dataset Output](R/US-output.md)<br />
+[Geno dataset Output](R/Geno-output.md)<br />
