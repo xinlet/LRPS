@@ -12,7 +12,10 @@ Xinle Tian, Alex Gibberd, Matthew Nunes, Sandipan Roy
 [https://arxiv.org/abs/2411.18334]
 
 # Datasets
-
+UK air pollution dataset can be found at [https://uk-air.defra.gov.uk/]
+Beijing air pollution dataset can be found at [http://archive.ics.uci.edu/ml/]
+US air pollution dataset can be found at [https://www.epa.gov/outdoor-air-quality-data)]
+Geno dataset can be found at [https://genomebiology.biomedcentral.com/articles/10.1186/gb-2004-5-11-r92]
 
 ## Code and Output
 [UK dataset Output](R/US-output.md)<br />
