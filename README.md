@@ -17,7 +17,7 @@ Beijing air pollution dataset can be found at [http://archive.ics.uci.edu/ml/]<b
 US air pollution dataset can be found at [https://www.epa.gov/outdoor-air-quality-data)]<br />
 Gene association dataset can be found at [https://genomebiology.biomedcentral.com/articles/10.1186/gb-2004-5-11-r92]<br />
 
-## Code and Output
+## Code and output
 [UK dataset Output](R/US-output.md)<br />
 [Beijing dataset Output](R/Beijing-output.md)<br />
 [US dataset Output](R/US-output.md)<br />
