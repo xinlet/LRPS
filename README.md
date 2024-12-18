@@ -6,7 +6,7 @@ Pre-smoothing is a technique aimed at increasing the signal-to-noise ratio in da
 
 ## Authors
 
-(Xinle Tian)[https://xinlet.github.io/], Alex Gibberd, Matthew Nunes, Sandipan Roy
+[Xinle Tian](https://xinlet.github.io/), [Alex Gibberd](https://sites.google.com/view/gibberd/) , [Matthew Nunes](https://people.bath.ac.uk/man54/homepage.html), [Sandipan Roy](https://roysandipan.github.io/)
 
 ## arXiv link
 Preprint paper link can be found at [https://arxiv.org/abs/2411.18334]<br />
