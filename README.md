@@ -1,4 +1,4 @@
-# A Multi-response Linear Regression Estimation Based on Low-rank Pre-smoothing
+# Large Multi-response Linear Regression Estimation Based on Low-rank Pre-smoothing
 
 ## Abstract
 
