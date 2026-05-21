@@ -6,10 +6,11 @@ Pre-smoothing is a technique aimed at increasing the signal-to-noise ratio in da
 
 ## Authors
 
-[Xinle Tian](https://xinlet.github.io/), [Alex Gibberd](https://sites.google.com/view/gibberd/) , [Matthew Nunes](https://people.bath.ac.uk/man54/homepage.html), [Sandipan Roy](https://sites.google.com/view/sandipanroy)
+[Xinle Tian](https://xinlet.github.io/), [Alex Gibberd](https://sites.google.com/view/gibberd/) , [Matthew Nunes](https://people.bath.ac.uk/man54/homepage.html), [Sandipan Roy](https://researchportal.bath.ac.uk/en/persons/sandipan-roy/)
 
-## ArXiv link
-Preprint paper link can be found at [https://arxiv.org/abs/2411.18334]<br />
+## Link
+Statistical Analysis and Data Mining link can be found at [https://onlinelibrary.wiley.com/doi/full/10.1002/sam.70072]<br />
+Preprint arXiv link can be found at [https://arxiv.org/abs/2411.18334]<br />
 
 ## Datasets
 UK air pollution dataset can be found at [https://uk-air.defra.gov.uk/]<br />
